@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,86 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<section>
+					<h1>Promises</h1>
+				</section>
+
+				<section>
+					<h2>Objectives</h2>
+					<ul>
+						<li>Discuss the purpose of Promises</li>
+						<li>Describe the three states of Promises</li>
+						<li>Use Deferred - the jQuery implementation of Promises</li>
+						<li>Make parallel requests using <code>Promise.all</code></li>
+						<li>Make sequential asynchronous calls in separate methods and return the final result with basic error handling using Promises</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>Promises are used for deferred and asynchronous functions Solve the problem of “callback hell” (the “pyramid of death”) - decrease the cost of change by making it easier to refactor code out into separate methods while keeping code readable Identify common use cases for promises: anything asynchronous! sequelize, knex, jquery, angular - all have promises built in. </p>
+				</section>
+
+				<section>
+					<p>A Promise represents an operation that hasn’t completed yet but is expected to in the future Explain that promises have 3 states: pending fulfilled rejected Identify that promises can be chained.</p>
+				</section>
+
+				<section>
+					<h2>Guided Questions</h2>
+					<ul>
+						<li>What is the JavaScript Event Loop?</li>
+						<li>What are three ways to handle async behavior?</li>
+						<li>What is callback hell?</li>
+						<li>How do you “promisify” a function?</li>
+						<li>What is the difference between <code>Promise.then()</code> and <code>Promise.catch()</code>?</li>
+						<li>How do you run multiple async requests at the same time?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What is the JavaScript Event Loop?</h2>
+				</section>
+
+				<section>
+					<h2>What are three ways to handle async behavior?</h2>
+				</section>
+
+				<section>
+					<h2>What is callback hell?</h2>
+				</section>
+
+				<section>
+					<h2>How do you “promisify” a function?</h2>
+				</section>
+
+				<section>
+					<h2>What is the difference between <code>Promise.then()</code> and <code>Promise.catch()</code>?</h2>
+				</section>
+
+				<section>
+					<h2>How do you run multiple async requests at the same time?</h2>
+				</section>
+
+				<section>
+					<h2>Push Questions</h2>
+				</section>
+
+				<section>
+					<h2>How do you retry a promise that you rejected?</h2>
+				</section>
+
+				<section>
+					<h2>How do you retain state from promise to promise?</h2>
+				</section>
+
+				<section>
+					<h2>What is the second argument to <code>.then()</code>?</h2>
+				</section>
+
+				<section>
+					<h2>Can you chain catches? thens?</h2>
+				</section>
+
 			</div>
 		</div>
 
